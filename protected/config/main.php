@@ -41,6 +41,8 @@ return array(
 		// uncomment the following to enable URLs in path-format
         'urlManager'=>array(
             'urlFormat'=>'path',
+            'urlSuffix' => '.html',
+            'useStrictParsing' => true,
             'showScriptName'=>false,
             'rules'=>array(
                 // стандартное правило для обработки '/' как 'site/index'
@@ -52,6 +54,7 @@ return array(
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                '<action:\w+>.html'=>'site/<action>'
             ),
         ),
 

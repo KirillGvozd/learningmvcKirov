@@ -31,16 +31,11 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
-    // Подрубаем рендер транслитератора Kirov
-    public function actionKirov()
-    {
-        // renders the view file 'protected/views/site/kirov.php'
-        // using the default layout 'protected/views/layouts/main.php'
-        $this->render('kirov');
-    }
+
+
     public function actionabout()
 
-    {   // renders the view file 'protected/views/site/kirov.php'
+    {   // renders the view file 'protected/views/site/about.php'
         // using the default layout 'protected/views/layouts/main.php'
         $this->render('about');
     }
